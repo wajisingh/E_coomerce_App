@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               BottomNavigationBarItem(
                 icon: Transform.translate(
-                  offset: Offset(0, -12),
+                  offset: Offset(0, -14),
                   child: Container(
                     width: 54,
                     height: 56,
