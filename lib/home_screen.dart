@@ -65,14 +65,39 @@ class _HomeScreenState extends State<HomeScreen> {
                 label: 'Wishlist',
               ),
               BottomNavigationBarItem(
-                icon: ColorFiltered(
-                  colorFilter: ColorFilter.mode(
-                    _selectedIndex == 2 ? Colors.red : Colors.black,
-                    BlendMode.srcIn,
+                icon: Transform.translate(
+                  offset: Offset(0, -12),
+                  child: Container(
+                    width: 54,
+                    height: 56,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0x29000000), // #00000017
+                          offset: Offset(0, 2),
+                          blurRadius: 14,
+                          spreadRadius: 0,
+                        ),
+                      ],
+                    ),
+                    child: Center(
+                      child: ColorFiltered(
+                        colorFilter: ColorFilter.mode(
+                          _selectedIndex == 2 ? Colors.red : Colors.black,
+                          BlendMode.srcIn,
+                        ),
+                        child: Image.asset(
+                          "assets/img/shop_icon.png",
+                          width: 26,
+                          height: 26,
+                        ),
+                      ),
+                    ),
                   ),
-                  child: Image.asset("assets/img/shop_icon.png", width: 23, height: 24),
                 ),
-                label: 'Shop',
+                label: '',
               ),
               BottomNavigationBarItem(
                 icon: ColorFiltered(
