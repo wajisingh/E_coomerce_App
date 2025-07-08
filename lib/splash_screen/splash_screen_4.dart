@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:e_commerce/sign_in_screen.dart';
+import 'package:e_commerce/login_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -17,7 +17,7 @@ class _SplashScreen4State extends State<SplashScreen4> {
     Timer(const Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => SignInScreen()),
+        MaterialPageRoute(builder: (context) => LoginScreen()),
       );
     });
   }
