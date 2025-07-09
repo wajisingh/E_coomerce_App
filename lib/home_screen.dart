@@ -16,9 +16,9 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
-    const HomePageContent(),
-    const Wishlist(),
-    const Shop(),
+    const HomeScreenContent(),
+    const WishlistScreen(),
+    const ShopScreen(),
     const Search(),
     const Setting(),
   ];
